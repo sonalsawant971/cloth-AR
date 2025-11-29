@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+
+  <!-- FIXED AR.js link -->
+  <script src="https://cdn.jsdelivr.net/npm/ar.js@3.3.2/aframe/build/aframe-ar.js"></script>
+</head>
+
+<body style="margin:0; overflow:hidden;">
+  <a-scene embedded arjs>
+
+    <!-- Human model -->
+    <a-entity gltf-model="models/human.glb" position="0 0 -2"></a-entity>
+
+    <!-- Cloth model -->
+    <a-entity id="shirt" gltf-model="models/shirt.glb" position="0 1.4 -2"></a-entity>
+
+  </a-scene>
+</body>
+</html>
